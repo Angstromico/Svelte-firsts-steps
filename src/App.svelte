@@ -6,10 +6,13 @@
   }
 
   let lazy = false
+  const color = 'orange'
 </script>
 
 <h1>{title}</h1>
 <img {...imgObj} loading={lazy ? 'lazy' : null} />
+<h2 style="color: {color}">Subtitle</h2>
+<h2 style:color>Subtitle 2</h2>
 
 <style lang="scss">
   h1 {
