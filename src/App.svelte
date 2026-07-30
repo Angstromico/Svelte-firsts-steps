@@ -1,9 +1,9 @@
 <script lang="ts">
-  let title = "Hello Svelte!";
+  let title = 'Hello Svelte!'
   const imgObj = {
-  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmyybA__TCR0LdCBW4i1-aNK8KyqIAZpMUoYg-rZ1qA&s=10",
-  alt: "gif"
-};
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmyybA__TCR0LdCBW4i1-aNK8KyqIAZpMUoYg-rZ1qA&s=10',
+    alt: 'gif',
+  }
 </script>
 
 <h1>{title}</h1>
