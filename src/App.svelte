@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Counter from './lib/Counter.svelte'
+
   let title = 'Hello Svelte!'
   const imgObj = {
     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmyybA__TCR0LdCBW4i1-aNK8KyqIAZpMUoYg-rZ1qA&s=10',
@@ -13,7 +15,6 @@
   }
 
   let message = $state('Hello World!')
-  let count = $state(0)
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
@@ -24,9 +25,7 @@
 <h3>{message}</h3>
 
 <button onclick={greet}>click me</button>
-<button onclick={() => count++}>
-  clicks: {count}
-</button>
+<Counter />
 
 <style lang="scss">
   h1 {
