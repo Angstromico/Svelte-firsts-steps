@@ -17,6 +17,13 @@
 
   let message = $state('Hello World!')
   let todo = new Todo('Learn Svelte')
+
+  let counter = $state({ count: 0 })
+
+  function onclick() {
+    // Will log `{ count: ... }` rather than `Proxy { ... }`
+    console.log($state.snapshot(counter))
+  }
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
@@ -32,6 +39,7 @@
   <p>{todo.text}</p>
 {/if}
 <Btn text="reset" onClick={() => todo.reset()} />
+<Btn text="Snapshop" onClick={onclick} />
 
 <style lang="scss">
   h1 {
