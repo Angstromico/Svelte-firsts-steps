@@ -11,12 +11,16 @@
   function greet() {
     alert('Welcome to Svelte!')
   }
+
+  let message = $state('Hello World!')
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
 <img {...imgObj} loading={lazy ? 'lazy' : null} />
 <h2 style="color: {color}">Subtitle</h2>
 <h2 style:color>Subtitle 2</h2>
+
+<h3>{message}</h3>
 
 <button onclick={greet}>click me</button>
 
