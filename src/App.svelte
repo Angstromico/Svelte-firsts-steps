@@ -13,6 +13,7 @@
   }
 
   let message = $state('Hello World!')
+  let count = $state(0)
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
@@ -23,6 +24,9 @@
 <h3>{message}</h3>
 
 <button onclick={greet}>click me</button>
+<button onclick={() => count++}>
+  clicks: {count}
+</button>
 
 <style lang="scss">
   h1 {
