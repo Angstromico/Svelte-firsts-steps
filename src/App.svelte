@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Counter, Btn } from './lib/index.svelte'
+  import { Counter, Btn, Double } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
 
   let title = 'Hello Svelte!'
@@ -40,6 +40,8 @@
 {/if}
 <Btn text="reset" onClick={() => todo.reset()} />
 <Btn text="Snapshop" onClick={onclick} />
+
+<Double />
 
 <style lang="scss">
   h1 {
