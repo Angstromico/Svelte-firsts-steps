@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Counter from './lib/Counter.svelte'
+  import { Counter, Btn } from './lib/index.svelte'
+  import { Todo } from './examples/classes.svelte'
 
   let title = 'Hello Svelte!'
   const imgObj = {
@@ -15,6 +16,7 @@
   }
 
   let message = $state('Hello World!')
+  let todo = new Todo('Learn Svelte')
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
@@ -26,6 +28,10 @@
 
 <button onclick={greet}>click me</button>
 <Counter />
+{#if todo.text !== ''}
+  <p>{todo.text}</p>
+{/if}
+<Btn text="reset" onClick={() => todo.reset()} />
 
 <style lang="scss">
   h1 {
