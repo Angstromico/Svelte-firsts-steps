@@ -7,6 +7,10 @@
 
   let lazy = false
   const color = 'orange'
+
+  function greet() {
+    alert('Welcome to Svelte!')
+  }
 </script>
 
 <h1 style="--color: {color}">{title}</h1>
@@ -14,9 +18,14 @@
 <h2 style="color: {color}">Subtitle</h2>
 <h2 style:color>Subtitle 2</h2>
 
+<button onclick={greet}>click me</button>
+
 <style lang="scss">
   h1 {
     color: var(--color, #ff3e00);
     font-family: 'Arial', sans-serif;
+  }
+  button {
+    font-size: 2em;
   }
 </style>
