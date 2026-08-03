@@ -5,6 +5,7 @@
     BtnLarge,
     Double,
     EffectCanvas,
+    EffectInstance,
     EffectInterval,
     GetTotal,
   } from './lib/index.svelte'
@@ -56,6 +57,7 @@
 
 <EffectCanvas />
 <EffectInterval />
+<EffectInstance />
 
 <style lang="scss">
   h1 {
