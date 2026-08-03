@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Counter, Btn, Double, GetTotal } from './lib/index.svelte'
+  import { Counter, Btn, BtnLarge, Double, GetTotal } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
 
   let title = 'Hello Svelte!'
@@ -43,6 +43,8 @@
 
 <Double />
 <GetTotal />
+
+<BtnLarge />
 
 <style lang="scss">
   h1 {
