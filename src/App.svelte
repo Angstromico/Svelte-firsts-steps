@@ -1,5 +1,12 @@
 <script lang="ts">
-  import { Counter, Btn, BtnLarge, Double, GetTotal } from './lib/index.svelte'
+  import {
+    Counter,
+    Btn,
+    BtnLarge,
+    Double,
+    EffectCanvas,
+    GetTotal,
+  } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
 
   let title = 'Hello Svelte!'
@@ -45,6 +52,8 @@
 <GetTotal />
 
 <BtnLarge />
+
+<EffectCanvas />
 
 <style lang="scss">
   h1 {
