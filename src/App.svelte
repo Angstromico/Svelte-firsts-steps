@@ -5,6 +5,7 @@
     BtnLarge,
     Double,
     EffectCanvas,
+    EffectInterval,
     GetTotal,
   } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
@@ -54,6 +55,7 @@
 <BtnLarge />
 
 <EffectCanvas />
+<EffectInterval />
 
 <style lang="scss">
   h1 {
