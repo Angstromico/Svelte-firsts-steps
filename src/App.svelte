@@ -8,6 +8,7 @@
     EffectInstance,
     EffectInterval,
     EffectPreScrollTo,
+    EffectTracking,
     GetTotal,
   } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
@@ -60,6 +61,7 @@
 <EffectInterval />
 <EffectInstance />
 <EffectPreScrollTo />
+<EffectTracking />
 
 <style lang="scss">
   h1 {

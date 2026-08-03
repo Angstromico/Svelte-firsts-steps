@@ -6,6 +6,7 @@ import EffectCanvas from './EffectCanvas.svelte'
 import EffectInstance from './EffectInstance.svelte'
 import EffectInterval from './EffectInterval.svelte'
 import EffectPreScrollTo from './EffectPreScrollTo.svelte'
+import EffectTracking from './EffectTracking.svelte'
 import GetLikes from './GetLikes.svelte'
 import GetTotal from './GetTotal.svelte'
 
@@ -18,6 +19,7 @@ export {
   EffectInstance,
   EffectInterval,
   EffectPreScrollTo,
+  EffectTracking,
   GetLikes,
   GetTotal,
 }
