@@ -7,6 +7,7 @@
     EffectCanvas,
     EffectInstance,
     EffectInterval,
+    EffectPending,
     EffectPreScrollTo,
     EffectTracking,
     GetTotal,
@@ -62,6 +63,7 @@
 <EffectInstance />
 <EffectPreScrollTo />
 <EffectTracking />
+<EffectPending />
 
 <style lang="scss">
   h1 {
