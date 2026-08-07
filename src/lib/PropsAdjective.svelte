@@ -1,9 +1,9 @@
 <script lang="ts">
   interface Props {
-    adjective: string
+    adjective?: string
   }
 
-  let { adjective }: Props = $props()
+  let { adjective = 'amazing' }: Props = $props()
 </script>
 
 <p>this component is {adjective}</p>

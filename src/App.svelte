@@ -67,6 +67,7 @@
 <EffectPending />
 
 <PropsAdjective adjective="awesome" />
+<PropsAdjective />
 
 <style lang="scss">
   h1 {
