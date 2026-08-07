@@ -10,6 +10,7 @@ import EffectPreScrollTo from './EffectPreScrollTo.svelte'
 import EffectTracking from './EffectTracking.svelte'
 import GetLikes from './GetLikes.svelte'
 import GetTotal from './GetTotal.svelte'
+import PropsAdjective from './PropsAdjective.svelte'
 
 export {
   Btn,
@@ -24,4 +25,5 @@ export {
   EffectTracking,
   GetLikes,
   GetTotal,
+  PropsAdjective,
 }

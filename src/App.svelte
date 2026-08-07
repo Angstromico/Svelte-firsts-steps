@@ -11,6 +11,7 @@
     EffectPreScrollTo,
     EffectTracking,
     GetTotal,
+    PropsAdjective,
   } from './lib/index.svelte'
   import { Todo } from './examples/classes.svelte'
 
@@ -64,6 +65,8 @@
 <EffectPreScrollTo />
 <EffectTracking />
 <EffectPending />
+
+<PropsAdjective adjective="awesome" />
 
 <style lang="scss">
   h1 {
