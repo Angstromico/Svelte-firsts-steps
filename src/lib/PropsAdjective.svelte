@@ -3,7 +3,7 @@
     adjective?: string
   }
 
-  let { adjective = 'amazing' }: Props = $props()
+  let { adjective: qualifier = 'amazing' }: Props = $props()
 </script>
 
-<p>this component is {adjective}</p>
+<p>this component is {qualifier}</p>
